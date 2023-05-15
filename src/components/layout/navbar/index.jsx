@@ -13,22 +13,22 @@ const index = () => {
     },
     {
       id: 2,
-      text: "Industrial",
+      text: "menu-industrial",
       to: "/industrial/",
     },
     {
       id: 3,
-      text: "Liquefied Natural Gas (LNG)",
+      text: "menu-liquefied",
       to: "/liquefied/",
     },
     {
       id: 4,
-      text: "Mining",
+      text: "menu-mining",
       to: "/mining/",
     },
     {
       id: 5,
-      text: "Contact",
+      text: "menu-contacts",
       to: "/contact/",
     },
   ];

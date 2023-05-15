@@ -1,5 +1,5 @@
 export const siteSettings = {
-  name: 'Infokredit',
+  name: 'NSI Capital',
   description: 'description',
   author: {
     name: 'PSS, Company.',
