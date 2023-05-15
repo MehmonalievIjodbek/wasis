@@ -7,6 +7,7 @@ import { dehydrate } from 'react-query/hydration'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { homeContemporaryHeroSlider as banners } from '@framework/static/banner'
 import { useTranslation } from 'next-i18next'
+import HomeIndex from '@components/home/index'
 
 export default function Home() {
   const { t } = useTranslation('menu')
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Container className="border-b-2 border[#E6E6E6]">
         {/* <h2>{t('menu-home')}</h2> */}
+        <HomeIndex />
       </Container>
     </>
   )
