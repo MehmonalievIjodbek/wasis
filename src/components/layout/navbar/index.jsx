@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import LanguageSwitcher from "@components/ui/language-switcher";
+import { useTranslation } from "next-i18next";
 
 const index = () => {
+  const { t } = useTranslation("common", "menu");
   const navbar = [
     {
       id: 1,
-      text: "Our Project",
+      text: "menu-project",
       to: "/our-project/",
     },
     {
@@ -43,7 +45,7 @@ const index = () => {
             {navbar.map((item) => (
               <div key={item.id}>
                 <Link href={item.to}>
-                  <p>{item.text}</p>
+                  <p>{t(item.text, { ns: "menu" })}</p>
                 </Link>
               </div>
             ))}

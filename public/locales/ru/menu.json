@@ -1,8 +1,7 @@
 {
-  "menu-home": "Home",
-  "menu-about": "О нас",
-  "menu-services": "Услуги",
-  "menu-news": "Новости",
-  "menu-contacts": "Контакты",
-  "menu-modern": "О нас"
+  "menu-project": "Наш проект",
+  "menu-industrial": "Промышленность",
+  "menu-liquefied": "Сжиженный природный газ (СПГ)",
+  "menu-mining": "Добыча ресурсов",
+  "menu-contacts": "Контакты"
 }

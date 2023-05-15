@@ -1,4 +1,3 @@
-
 export const siteSettings = {
   name: 'Infokredit',
   description: 'description',
@@ -49,7 +48,7 @@ export const siteSettings = {
         id: 5,
         path: '/contact-us',
         label: 'menu-contacts',
-      }
+      },
     ],
     mobileMenu: [
       {
@@ -61,7 +60,7 @@ export const siteSettings = {
             id: 1,
             path: '/about',
             label: 'menu-about',
-          }
+          },
         ],
       },
       {
@@ -78,7 +77,7 @@ export const siteSettings = {
         id: 4,
         path: '/contact-us',
         label: 'menu-contacts',
-      }
+      },
     ],
     languageMenu: [
       {
@@ -91,11 +90,11 @@ export const siteSettings = {
         name: 'RU',
         value: 'ru',
       },
-      {
-        id: 'uz',
-        name: 'UZ',
-        value: 'uz',
-      },
-    ]
+      // {
+      //   id: 'uz',
+      //   name: 'UZ',
+      //   value: 'uz',
+      // },
+    ],
   },
 }

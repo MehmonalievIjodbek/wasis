@@ -1,8 +1,7 @@
 {
-  "menu-home": "Home",
-  "menu-about": "О нас",
-  "menu-services": "Услуги",
-  "menu-news": "Новости",
-  "menu-contacts": "Контакты",
-  "menu-modern": "О нас"
+  "menu-project": "Our Project",
+  "menu-industrial": "Industrial",
+  "menu-liquefied": "Liquefied Natural Gas (LNG)",
+  "menu-mining": "Mining    ",
+  "menu-contacts": "Contact"
 }
