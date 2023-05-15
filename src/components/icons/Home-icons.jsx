@@ -1,6 +1,6 @@
 import React from "react";
 
-function HomeIcon() {
+function HomeIcons() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -30,4 +30,4 @@ function HomeIcon() {
   );
 }
 
-export default HomeIcon;
+export default HomeIcons;

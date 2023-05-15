@@ -102,10 +102,13 @@
 }
 @media screen and (max-width: 425px) {
   .footer {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    .footer-card {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
   }
+
   .home {
     .home-text {
       p {

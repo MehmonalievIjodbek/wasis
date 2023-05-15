@@ -18,12 +18,12 @@ const dataSelect = [
   {
     id: 3,
     text: "Tank Farms & Terminals",
-    to: "/tank-farms-and-terminals/",
+    to: "/tankfarms/",
   },
   {
     id: 4,
     text: "Underground Storage",
-    to: "/underground-storage/",
+    to: "/underground/",
   },
   {
     id: 5,
@@ -33,7 +33,7 @@ const dataSelect = [
   {
     id: 6,
     text: "Chemicals & Petrochemicals",
-    to: "/chemicals-petrochemicals/",
+    to: "/chemicals/",
   },
 ];
 

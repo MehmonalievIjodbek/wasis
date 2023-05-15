@@ -19,7 +19,7 @@ const index = () => {
     {
       id: 3,
       text: "Liquefied Natural Gas (LNG)",
-      to: "/liquefied-natural-gas-lng/",
+      to: "/liquefied/",
     },
     {
       id: 4,

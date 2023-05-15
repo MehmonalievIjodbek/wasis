@@ -1,8 +1,20 @@
+import React from 'react'
 
-const Footer: React.FC = () => (
-  <footer className='border-b-4 border-heading mt-9 md:mt-11 lg:mt-16 3xl:mt-20 pt-2.5 lg:pt-0 2xl:pt-2'>
-        <h2>FOOTER</h2>
-  </footer>
-)
+const Footer = () => {
+  return (
+    <div className="footer">
+      <div className="container">
+        <div className="footer-card">
+          <span>© NSI 2023</span>
+          <img
+            className="footer-card__img"
+            src="/assets/images/log.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default Footer

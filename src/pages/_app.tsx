@@ -53,7 +53,6 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
               <Component {...pageProps} key={router.route} />
               <ToastContainer />
             </Layout>
-
             <ManagedDrawer />
           </ManagedUIContext>
         </Hydrate>
@@ -64,3 +63,15 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
 }
 
 export default appWithTranslation(CustomApp)
+
+// import Layout from '@components/layout/layout'
+// import '@styles/style.scss'
+// import '@styles/style-mobile.scss'
+
+// export default function MyApp({ Component, pageProps }: any) {
+//   return (
+//     <Layout>
+//       <Component {...pageProps} />
+//     </Layout>
+//   )
+// }
