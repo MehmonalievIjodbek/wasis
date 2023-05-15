@@ -1,0 +1,140 @@
+@media screen and (min-width: 1904px) {
+  .home {
+    .home-text {
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 72px;
+        font-weight: 500;
+        color: white;
+        display: grid;
+        position: absolute;
+        left: 240px;
+        bottom: 20px;
+        text-align: left;
+      }
+      span {
+        position: absolute;
+        right: 100px;
+        bottom: -5px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  // .home-button {
+  //   padding: 0 20px;
+  // }
+
+  .header {
+    &-container {
+      padding: 20px 20px;
+    }
+  }
+}
+@media screen and (max-width: 1255px) {
+  .header-nav {
+    display: none;
+  }
+  .open-modal {
+    display: block;
+  }
+}
+@media screen and (max-width: 840px) {
+  .homeSelect {
+    flex-wrap: wrap;
+    width: 100%;
+    &-right {
+      width: 100%;
+    }
+  }
+  .chemicals {
+    flex-wrap: wrap;
+    gap: 10px !important;
+    width: 100%;
+    &-right {
+      width: 100%;
+    }
+  }
+  .home {
+    .home-text {
+      p {
+        left: 20px;
+        font-size: 46px;
+        width: 50%;
+      }
+    }
+  }
+  .contact {
+    &-card {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .chemicals__left-cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    &-img {
+      img {
+        width: 200px;
+        height: 45px;
+      }
+    }
+  }
+  .contact {
+    &-card {
+      flex-wrap: wrap !important;
+      gap: 10px !important;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .home {
+    .home-text {
+      p {
+        font-size: 40px;
+      }
+    }
+  }
+  .chemicals {
+    .chemicals-left {
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .chemicals-right {
+      .chemicals-right__container {
+        .chemicals-right__container-link {
+          p {
+            font-size: 16px !important;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
