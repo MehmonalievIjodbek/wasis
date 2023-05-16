@@ -10,7 +10,7 @@ export const siteSettings = {
     address: '',
   },
   logo: {
-    url: '/assets/images/logo.svg',
+    url: '/assets/images/iconLogo.jpg',
     alt: 'Infokredit',
     href: '/',
     width: 95,

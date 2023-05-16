@@ -44,21 +44,23 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
   const Layout = (Component as any).Layout || Noop
 
   return (
-    <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
-      <QueryClientProvider client={queryClientRef.current}>
-        <Hydrate state={pageProps.dehydratedState}>
-          <ManagedUIContext>
-            <Layout pageProps={pageProps}>
-              <DefaultSeo />
-              <Component {...pageProps} key={router.route} />
-              <ToastContainer />
-            </Layout>
-            <ManagedDrawer />
-          </ManagedUIContext>
-        </Hydrate>
-        {/* <ReactQueryDevtools /> */}
-      </QueryClientProvider>
-    </AnimatePresence>
+    <>
+      <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
+        <QueryClientProvider client={queryClientRef.current}>
+          <Hydrate state={pageProps.dehydratedState}>
+            <ManagedUIContext>
+              <Layout pageProps={pageProps}>
+                <DefaultSeo />
+                <Component {...pageProps} key={router.route} />
+                <ToastContainer />
+              </Layout>
+              <ManagedDrawer />
+            </ManagedUIContext>
+          </Hydrate>
+          {/* <ReactQueryDevtools /> */}
+        </QueryClientProvider>
+      </AnimatePresence>
+    </>
   )
 }
 
