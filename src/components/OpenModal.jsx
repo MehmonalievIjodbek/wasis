@@ -3,35 +3,11 @@ import { useState } from "react";
 import { MenuFoldOutlined, CloseOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import RightIcon from "./icons/Right-icon";
+import { useTranslation } from "next-i18next";
 
-const dataSelect = [
-  {
-    id: 1,
-    text: "Our Project",
-    to: "/our-project/",
-  },
-  {
-    id: 2,
-    text: "Industrial",
-    to: "/industrial/",
-  },
-  {
-    id: 3,
-    text: "Liquefied Natural Gas (LNG)",
-    to: "/liquefied/",
-  },
-  {
-    id: 4,
-    text: "Mining",
-    to: "/mining/",
-  },
-  {
-    id: 5,
-    text: "Contact",
-    to: "/contact/",
-  },
-];
 const App = () => {
+  const { t } = useTranslation("common");
+
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState("left");
   const showDrawer = () => {
@@ -43,6 +19,39 @@ const App = () => {
   const onClose = () => {
     setOpen(false);
   };
+
+  const dataSelect = [
+    {
+      id: 1,
+      text: "pipelines",
+      to: "/pipelines/",
+    },
+    {
+      id: 2,
+      text: "refining",
+      to: "/refining/",
+    },
+    {
+      id: 3,
+      text: "tankFarms",
+      to: "/tankfarms/",
+    },
+    {
+      id: 4,
+      text: "underground",
+      to: "/underground/",
+    },
+    {
+      id: 5,
+      text: "upstream",
+      to: "/upstream/",
+    },
+    {
+      id: 6,
+      text: "chemicals",
+      to: "/chemicals/",
+    },
+  ];
   return (
     <div className="open-modal">
       <Space>
@@ -80,7 +89,7 @@ const App = () => {
                   onClick={onClose}
                   className="homeSelect-right__container-link"
                 >
-                  <p>{item.text}</p>
+                  <p>{t(item.text, { ns: "common" })}</p>
                   <span>
                     <RightIcon />
                   </span>

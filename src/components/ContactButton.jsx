@@ -1,8 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import SendIcon from "./icons/Telegram-icons";
+import { useTranslation } from "next-i18next";
 
 const ContactButton = () => {
+  const { t } = useTranslation("common");
+
   return (
     <div
       className="home-button"
@@ -10,7 +13,7 @@ const ContactButton = () => {
     >
       <Link href="/contact">
         <button className="home-button__link">
-          <SendIcon /> Contact
+          <SendIcon /> {t("contact-button")}
         </button>
       </Link>
     </div>

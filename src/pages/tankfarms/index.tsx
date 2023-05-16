@@ -4,64 +4,58 @@ import HomeButton from '../../components/HomeButton'
 import ChemPage from '../../components/ChemPage'
 import Layout from '@components/layout/layout'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
-const chemicals = {
-  text: 'Tank Farms & Terminals',
-  description: (
-    <div>
-      <p>
-        Consulting services, design, project management, and site supervision
-        for the construction of tank farms and terminals comprise an important
-        market segment for NSI.
-      </p>
-
-      <p>
-        In prestigious international projects in this sector, NSI has made a
-        name for itself among investors, owners, EPC contractors, and public and
-        private banks.
-      </p>
-    </div>
-  ),
-  selectText: 'Fields of Expertise:',
-}
-
-const items = [
-  {
-    id: 1,
-    text: 'Storage tanks for crude oil and chemicals',
-  },
-  {
-    id: 2,
-    text: 'Finished products',
-  },
-  {
-    id: 3,
-    text: 'LPG and LNG',
-  },
-  {
-    id: 4,
-    text: 'Bio fuels, chemicals, and additives',
-  },
-  {
-    id: 5,
-    text:
-      'Loading and unloading facilities for railcars, trucks, VLCC, and barges',
-  },
-  {
-    id: 6,
-    text: 'Jetties',
-  },
-  {
-    id: 7,
-    text: 'Single point moorings (SPM), etc.',
-  },
-]
-const banner = {
-  src: '/assets/images/tankfarms.jpg',
-  text: 'TANK FARMS & TERMINALS',
-}
+import { useTranslation } from 'next-i18next'
 
 export default function index() {
+  const { t } = useTranslation('common')
+
+  const chemicals = {
+    text: 'tank-banner',
+    description: (
+      <div>
+        <p>{t('tank-desc1')}</p>
+
+        <p>{t('tank-desc2')}</p>
+      </div>
+    ),
+    selectText: 'selectText',
+  }
+
+  const items = [
+    {
+      id: 1,
+      text: 'tank-text1',
+    },
+    {
+      id: 2,
+      text: 'tank-text2',
+    },
+    {
+      id: 3,
+      text: 'tank-text3',
+    },
+    {
+      id: 4,
+      text: 'tank-text4',
+    },
+    {
+      id: 5,
+      text: 'tank-text5',
+    },
+    {
+      id: 6,
+      text: 'tank-text6',
+    },
+    {
+      id: 7,
+      text: 'tank-text7',
+    },
+  ]
+  const banner = {
+    src: '/assets/images/tankfarms.jpg',
+    text: 'tank-banner',
+  }
+
   return (
     <div>
       <div>
