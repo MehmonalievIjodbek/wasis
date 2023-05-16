@@ -200,7 +200,7 @@ h6 {
   justify-content: space-between;
   margin-bottom: 100px;
   &-left {
-    width: 100%;
+    width: 100%;F
     h2 {
       font-family: "Poppins", sans-serif;
       font-weight: 400;
@@ -492,29 +492,6 @@ h6 {
 }
 .open-modal {
   display: none;
-}
-:where(.css-dev-only-do-not-override-15rg2km).ant-btn {
-  height: 0px;
-  padding: 0 15px;
-}
-
-:where(.css-dev-only-do-not-override-15rg2km).ant-btn-primary:not(
-    :disabled
-  ):hover {
-  color: #000000;
-  background: none;
-}
-:where(.css-dev-only-do-not-override-15rg2km).ant-btn-default:not(
-    :disabled
-  ):hover {
-  color: #000000;
-  background: none;
-}
-.ant-btn-primary {
-  background: none;
-  color: #000000;
-  font-size: 26px;
-  box-shadow: none;
 }
 
 .listbox-language {
