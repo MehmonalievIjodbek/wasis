@@ -99,6 +99,20 @@
       gap: 10px !important;
     }
   }
+
+  .homeSelect-left {
+    h2 {
+      width: 100%;
+      font-size: 36px;
+    }
+  }
+  .home {
+    .home-text {
+      p {
+        font-size: 36px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 425px) {
   .footer {
@@ -106,14 +120,6 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-    }
-  }
-
-  .home {
-    .home-text {
-      p {
-        font-size: 40px;
-      }
     }
   }
   .chemicals {
@@ -138,6 +144,19 @@
   .contact {
     h2 {
       font-size: 32px;
+    }
+  }
+  .homeSelect-left {
+    h2 {
+      width: 100%;
+      font-size: 30px;
+    }
+  }
+  .home {
+    .home-text {
+      p {
+        font-size: 30px;
+      }
     }
   }
 }
