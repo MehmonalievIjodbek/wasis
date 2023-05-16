@@ -18,7 +18,7 @@ const dataSelect = [
   {
     id: 3,
     text: "Liquefied Natural Gas (LNG)",
-    to: "/liquefied-natural-gas-lng/",
+    to: "/liquefied/",
   },
   {
     id: 4,
@@ -76,7 +76,10 @@ const App = () => {
           {dataSelect.map((item) => (
             <Link onClick={onClose} href={item.to}>
               <div className="homeSelect-right__container" key={item.id}>
-                <div className="homeSelect-right__container-link">
+                <div
+                  onClick={onClose}
+                  className="homeSelect-right__container-link"
+                >
                   <p>{item.text}</p>
                   <span>
                     <RightIcon />

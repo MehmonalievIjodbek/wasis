@@ -1,3 +1,6 @@
+import EngIcon from '@components/icons/language-eng-icon'
+import RuIcon from '@components/icons/language-ru-icon'
+
 export const siteSettings = {
   name: 'NSI Capital',
   description: 'description',
@@ -84,11 +87,13 @@ export const siteSettings = {
         id: 'en',
         name: 'EN',
         value: 'en',
+        icon: <EngIcon />,
       },
       {
         id: 'ru',
         name: 'RU',
         value: 'ru',
+        icon: <RuIcon />,
       },
       // {
       //   id: 'uz',

@@ -492,3 +492,17 @@ h6 {
 .open-modal {
   display: none;
 }
+
+.listbox-language {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .listbox-text {
+    background: red;
+    font-size: 16px;
+    font-weight: 760;
+  }
+  .cursorCenter {
+    cursor: pointer;
+  }
+}

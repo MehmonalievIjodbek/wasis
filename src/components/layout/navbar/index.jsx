@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import LanguageSwitcher from "@components/ui/language-switcher";
 import { useTranslation } from "next-i18next";
+import OpenModal from "../../../components/OpenModal";
 
 const index = () => {
   const { t } = useTranslation("common", "menu");
@@ -18,16 +19,11 @@ const index = () => {
     },
     {
       id: 3,
-      text: "menu-liquefied",
-      to: "/liquefied/",
-    },
-    {
-      id: 4,
       text: "menu-mining",
       to: "/mining/",
     },
     {
-      id: 5,
+      id: 4,
       text: "menu-contacts",
       to: "/contact/",
     },
@@ -51,7 +47,7 @@ const index = () => {
             ))}
           </div>
           <LanguageSwitcher />
-          {/* <OpenModal /> */}
+          <OpenModal />
         </div>
       </div>
     </div>

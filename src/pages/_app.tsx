@@ -23,7 +23,7 @@ import 'react-toastify/dist/ReactToastify.css'
 // import "@styles/scrollbar.css";
 // import "@styles/swiper-carousel.css";
 // import "@styles/custom-plugins.css";
-// import "@styles/tailwind.css";
+// import '@styles/tailwind.css'
 import '@styles/style.scss'
 import '@styles/style-mobile.scss'
 
