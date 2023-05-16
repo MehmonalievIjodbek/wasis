@@ -1,45 +1,38 @@
-import React from "react";
-import HomePage from "@components/home/HomePage";
-import HomeButton from "../../components/HomeButton";
-import ChemPage from "../../components/ChemPage";
-import Layout from "@components/layout/layout";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import React from 'react'
+import HomePage from '@components/home/HomePage'
+import HomeButton from '../../components/HomeButton'
+import ChemPage from '../../components/ChemPage'
+import Layout from '@components/layout/layout'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 
-const chemicals = {
-  text: "Pipelines",
-  description: (
-    <div>
-      <p>
-        For years, NSI has been among the top ten international engineering
-        companies for large pipeline systems both onshore and offshore,
-        including pumping stations, compressor stations, storage, and loading
-        facilities. NSI has designed some of the largest pipeline systems in the
-        world and provided project management services throughout their
-        implementation.
-      </p>
+export default function index() {
+  const { t } = useTranslation('common')
 
-      <p>
-        NSI offers all the required technical disciplines and project management
-        services in house.
-      </p>
-    </div>
-  ),
-  selectText: "Fields of Expertise:",
-};
+  const chemicals = {
+    text: 'pipelines-banner',
+    description: (
+      <div>
+        <p>{t('pipelines-desc1')}</p>
 
-const items = [
-  {
-    id: 1,
-    text: "All types of pipeline systems and stations (both new construction and rehabilitation)",
-  },
-];
+        <p>{t('pipelines-desc2')}</p>
+      </div>
+    ),
+    selectText: 'selectText',
+  }
 
-const banner = {
-  src: "/assets/images/pipelines.jpg",
-  text: "PIPELINES",
-};
+  const items = [
+    {
+      id: 1,
+      text: 'pipelines-text',
+    },
+  ]
 
-export default function index(){
+  const banner = {
+    src: '/assets/images/pipelines.jpg',
+    text: 'pipelines-banner',
+  }
+
   return (
     <div>
       <div>
@@ -52,8 +45,8 @@ export default function index(){
         <ChemPage chemicals={chemicals} items={items} />
       </div>
     </div>
-  );
-};
+  )
+}
 
 index.Layout = Layout
 

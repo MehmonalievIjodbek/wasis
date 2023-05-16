@@ -39,7 +39,7 @@ const index = () => {
           </div>
           <div className="header-nav">
             {navbar.map((item) => (
-              <div key={item.id}>
+              <div style={{ cursor: "pointer" }} key={item.id}>
                 <Link href={item.to}>
                   <p>{t(item.text, { ns: "menu" })}</p>
                 </Link>

@@ -1,6 +1,10 @@
 import React from "react";
 import RightImg from "../icons/Right-img";
+import { useTranslation } from "next-i18next";
+
 const HomePage = (props) => {
+  const { t } = useTranslation("common");
+
   const { banner } = props;
 
   console.log("banner.src", banner.src);
@@ -14,7 +18,7 @@ const HomePage = (props) => {
         }}
       >
         <div className="home-text">
-          <p>{banner.text}</p>
+          <p>{t(banner.text, { ns: "common" })}</p>
           <span>
             <RightImg />
           </span>

@@ -4,95 +4,93 @@ import GreenIcons from '../../components/icons/Green-icons'
 import ContactButton from '../../components/ContactButton'
 import Layout from '../../components/layout/layout'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 
 export default function index() {
+  const { t } = useTranslation('common')
+
   const chemicals = {
-    text:
-      'Representatives of our company have been involved in the engineering and construction of large projects in many countries, in particular:    ',
-    selectText:
-      'An engineering company specializing in the provision of engineering and technical services. Our company provides full management and support of technical projects:',
+    text: 'chemicals-text',
+    selectText: 'chemicals-selectText',
   }
 
   const projectCard = [
     {
       id: 1,
-      title: 'ABB Lummus Global GmbH. Germany - Uzbekistan.',
+      title: 'project-title1',
       text: '2002 -1998',
-      desc:
-        'Shurtan gas-chemical complex. Production of ethylene and polyethylene for Uzbekneftegaz.',
+      desc: 'project-desc1',
     },
     {
       id: 2,
-      title: 'NIPIGASPERERABOTKA. Япония – Россия.',
+      title: 'project-title2',
       text: '2004 -2002',
-      desc: 'Factory LNG (Sakhalin-II) for Shell Global Solution.      ',
+      desc: 'project-desc2',
     },
     {
       id: 3,
-      title: 'ILF Consulting Engineers. Türkiye.',
+      title: 'project-title3',
       text: '2005-2004',
-      desc: 'BTC oil pipeline project for BP.',
+      desc: 'project-desc3',
     },
     {
       id: 4,
-      title: 'LURGI GmbH Germany. ',
+      title: 'project-title4',
       text: '2010 -2005      ',
-      desc: 'Methanol project in Russia and China; Melamine project.  ',
+      desc: 'project-desc4',
     },
     {
       id: 5,
-      title: 'AIR LIQUIDE GLOBAL E&C SOLUTION / LURGI GmbH. Germany. ',
+      title: 'project-title5 ',
       text: '2013- 2010',
-      desc: 'Melamine project.',
+      desc: 'project-desc5',
     },
     {
       id: 6,
-      title: ' Linde AG. Germany.',
+      title: 'project-title6',
       text: '2017 -2013',
-      desc: 'Assembly of steel factory production in Russia. ',
+      desc: 'project-desc6',
     },
   ]
 
   const items = [
     {
       id: 1,
-      text: 'Planning a place for placing objects',
+      text: 'our-items-text1',
     },
     {
       id: 2,
-      text:
-        'Legal and actual actions on issues related to the placement of objects',
+      text: 'our-items-text2',
     },
     {
       id: 3,
-      text: 'Engineering surveys',
+      text: 'our-items-text3',
     },
     {
       id: 4,
-      text: 'Design',
+      text: 'our-items-text4',
     },
     {
       id: 5,
-      text: 'PorConstructionts',
+      text: 'our-items-text5',
     },
     {
       id: 6,
-      text:
-        'Legal and actual actions on the issues of object legalization (expertise) ',
+      text: 'our-items-text6 ',
     },
     {
       id: 7,
-      text: 'Supply and maintenance of equipment',
+      text: 'our-items-text7',
     },
     {
       id: 8,
-      text: 'Commissioning',
+      text: 'our-items-text8',
     },
   ]
 
   const banner = {
     src: '/assets/images/ourProjects.jpg',
-    text: 'Our Project',
+    text: 'our-banner',
   }
   return (
     <div>
@@ -105,35 +103,25 @@ export default function index() {
         </div> */}
         <div className="ourProjects">
           <div>
-            <h1>
-              Representative office of the engineering company NSI-Capital PTE
-              LTD (Singapore) in Uzbekistan.
-            </h1>
-            <h2>
-              NSI-Capital PTE LTD provides engineering services and supply of
-              modern technological equipment to enterprises of the Republic of
-              Uzbekistan. The company has been successfully operating in the
-              fields of oil and gas, petrochemical, metallurgical industries,
-              mechanical engineering and energy for many years, specializing in
-              research and the search for non-standard, effective solutions.
-            </h2>
+            <h1>{t('our-projects-h1')}</h1>
+            <h2>{t('our-projects-h2')}</h2>
           </div>
           <div>
             <div className="chemicals">
               <div className="chemicals-left">
-                <h2>{chemicals.text}</h2>
+                <h2>{t(chemicals.text, { ns: 'common' })}</h2>
                 <div className="chemicals__left-cards">
                   {projectCard.map((item) => (
                     <div key={item.id} className="chemicals__left-card">
-                      <h5>{item.title}</h5>
-                      <p>{item.text}</p>
-                      <h6>{item.desc}</h6>
+                      <h5>{t(item.title, { ns: 'common' })}</h5>
+                      <p>{t(item.text, { ns: 'common' })}</p>
+                      <h6>{t(item.desc, { ns: 'common' })}</h6>
                     </div>
                   ))}
                 </div>
               </div>
               <div className="chemicals-right">
-                <h3>{chemicals.selectText}</h3>
+                <h3>{t(chemicals.selectText, { ns: 'common' })}</h3>
                 <div>
                   {items.map((item) => (
                     <div className="chemicals-right__container" key={item.id}>
@@ -141,7 +129,7 @@ export default function index() {
                         <span>
                           <GreenIcons />
                         </span>
-                        <p>{item.text}</p>
+                        <p>{t(item.text, { ns: 'common' })}</p>
                       </div>
                     </div>
                   ))}
@@ -150,26 +138,8 @@ export default function index() {
             </div>
           </div>
           <div className="ourProject-text">
-            <h4>
-              The dynamics of the development of engineering services in
-              Uzbekistan predetermined NSI-Capital PTE LTD the feasibility of
-              creating a separate independent unit of the company to conduct
-              business in this region, to ensure close cooperation with
-              industrial enterprises of Uzbekistan and promptly resolve emerging
-              production issues and service the supplied equipment.
-            </h4>
-            <h5>
-              The representative office of the engineering NSI-Capital PTE LTD
-              in Uzbekistan is ready, at the request of the Customers, to
-              participate in the implementation of global projects for the
-              development of the enterprise / industry, as well as the design of
-              individual units of installations, technological units and
-              individual devices, select technological parameters, link and
-              design study of units at the production site, carry out by its own
-              specialists or with the involvement of specialists from the
-              equipment manufacturer, installation supervision, commissioning of
-              equipment, warranty and service maintenance.
-            </h5>
+            <h4>{t('ourProject-text-h4')}</h4>
+            <h5>{t('ourProject-text-h5')}</h5>
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'end' }}>
