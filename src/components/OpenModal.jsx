@@ -6,7 +6,7 @@ import RightIcon from "./icons/Right-icon";
 import { useTranslation } from "next-i18next";
 
 const App = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("common", "menu");
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState("left");
@@ -20,36 +20,26 @@ const App = () => {
     setOpen(false);
   };
 
-  const dataSelect = [
+  const navbar = [
     {
       id: 1,
-      text: "pipelines",
-      to: "/pipelines/",
+      text: "menu-project",
+      to: "/our-project/",
     },
     {
       id: 2,
-      text: "refining",
-      to: "/refining/",
+      text: "menu-industrial",
+      to: "/industrial/",
     },
     {
       id: 3,
-      text: "tankFarms",
-      to: "/tankfarms/",
+      text: "menu-mining",
+      to: "/mining/",
     },
     {
       id: 4,
-      text: "underground",
-      to: "/underground/",
-    },
-    {
-      id: 5,
-      text: "upstream",
-      to: "/upstream/",
-    },
-    {
-      id: 6,
-      text: "chemicals",
-      to: "/chemicals/",
+      text: "menu-contacts",
+      to: "/contact/",
     },
   ];
   return (
@@ -82,14 +72,14 @@ const App = () => {
         }
       >
         <div>
-          {dataSelect.map((item) => (
+          {navbar.map((item) => (
             <Link onClick={onClose} href={item.to}>
               <div className="homeSelect-right__container" key={item.id}>
                 <div
                   onClick={onClose}
                   className="homeSelect-right__container-link"
                 >
-                  <p>{t(item.text, { ns: "common" })}</p>
+                  <p>{t(item.text, { ns: "menu" })}</p>
                   <span>
                     <RightIcon />
                   </span>
