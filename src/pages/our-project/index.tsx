@@ -76,7 +76,7 @@ export default function index() {
     },
     {
       id: 6,
-      text: 'our-items-text6 ',
+      text: 'our-items-text6',
     },
     {
       id: 7,
