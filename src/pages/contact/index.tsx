@@ -95,7 +95,7 @@ export default function index() {
                 style={{
                   fontSize: '16px',
                   fontWeight: '400',
-                  fontFamily: 'Poppins',
+                  fontFamily: 'Jost',
                   marginBottom: '24px',
                   color: '#00845e',
                 }}
@@ -119,7 +119,7 @@ export default function index() {
                 style={{
                   fontSize: '16px',
                   fontWeight: '400',
-                  fontFamily: 'Poppins',
+                  fontFamily: 'Jost',
                   marginBottom: '24px',
                   color: '#00845e',
                 }}
