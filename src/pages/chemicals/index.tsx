@@ -44,6 +44,10 @@ export default function index() {
       id: 5,
       text: 'chemicals-text5',
     },
+    {
+      id: 6,
+      text: 'chemicals-text6',
+    },
   ]
 
   const banner = {

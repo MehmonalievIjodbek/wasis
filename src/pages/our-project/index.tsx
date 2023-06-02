@@ -5,6 +5,8 @@ import ContactButton from '../../components/ContactButton'
 import Layout from '../../components/layout/layout'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import HomeButton from '../../components/HomeButton'
+import parse from 'html-react-parser'
 
 export default function index() {
   const { t } = useTranslation('common')
@@ -18,37 +20,37 @@ export default function index() {
     {
       id: 1,
       title: 'project-title1',
-      text: '2002 -1998',
+      text: '1998 - 2002',
       desc: 'project-desc1',
     },
     {
       id: 2,
       title: 'project-title2',
-      text: '2004 -2002',
+      text: '2002 - 2004',
       desc: 'project-desc2',
     },
     {
       id: 3,
       title: 'project-title3',
-      text: '2005-2004',
+      text: '2004 - 2005',
       desc: 'project-desc3',
     },
     {
       id: 4,
       title: 'project-title4',
-      text: '2010 -2005      ',
+      text: '2005 - 2010',
       desc: 'project-desc4',
     },
     {
       id: 5,
-      title: 'project-title5 ',
-      text: '2013- 2010',
+      title: 'project-title5',
+      text: '2010 - 2013',
       desc: 'project-desc5',
     },
     {
       id: 6,
       title: 'project-title6',
-      text: '2017 -2013',
+      text: '2013 - 2017',
       desc: 'project-desc6',
     },
   ]
@@ -98,9 +100,9 @@ export default function index() {
         <HomePage banner={banner} />
       </div>
       <div className="container">
-        {/* <div>
-          <HomeButton />
-        </div> */}
+        <HomeButton />
+      </div>
+      <div className="container">
         <div className="ourProjects">
           <div>
             <h1>{t('our-projects-h1')}</h1>
@@ -112,11 +114,16 @@ export default function index() {
                 <h2>{t(chemicals.text, { ns: 'common' })}</h2>
                 <div className="chemicals__left-cards">
                   {projectCard.map((item) => (
-                    <div key={item.id} className="chemicals__left-card">
-                      <h5>{t(item.title, { ns: 'common' })}</h5>
-                      <p>{t(item.text, { ns: 'common' })}</p>
-                      <h6>{t(item.desc, { ns: 'common' })}</h6>
-                    </div>
+                    <>
+                      <div key={item.id} className="chemicals__left-card">
+                        <h5>{parse(t(item.title, { ns: 'common' }))}</h5>
+                        <p>{t(item.text, { ns: 'common' })}</p>
+                        <h6>{parse(t(item.desc, { ns: 'common' }))}</h6>
+                        <div className="chemicals-button__card">
+                          <button>Посмотреть картину</button>
+                        </div>
+                      </div>
+                    </>
                   ))}
                 </div>
               </div>

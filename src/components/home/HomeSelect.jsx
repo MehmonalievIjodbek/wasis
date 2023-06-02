@@ -52,7 +52,7 @@ const HomeSelect = () => {
       {/* <HomeButton /> */}
       <div className="homeSelect">
         <div className="homeSelect-left">
-          <h2>{t(selectText.text, { ns: "common" })}</h2>
+          {/* <h2>{t(selectText.text, { ns: "common" })}</h2> */}
           <p>{t(selectText.label, { ns: "common" })}</p>
           <h6>{t(selectText.description, { ns: "common" })}</h6>
         </div>

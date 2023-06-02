@@ -10,7 +10,7 @@ const ChemPage = (props) => {
     <div className="container">
       <div className="chemicals">
         <div className="chemicals-left">
-          <h2>{t(chemicals.text, { ns: "common" })}</h2>
+          {/* <h2>{t(chemicals.text, { ns: "common" })}</h2> */}
           <p>{t(chemicals.label, { ns: "common" })}</p>
           <h6>{chemicals.description}</h6>
         </div>

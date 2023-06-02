@@ -104,14 +104,41 @@ export default function index() {
                 <span style={{ color: 'red' }}>{t('contact-span')}</span>
                 {t('contact-h42')}
               </h4>
+
               <div className="contact-card__number">
                 <div
-                  style={{ display: 'flex', gap: '10px', alignItems: 'center' }}
+                  style={{
+                    display: 'flex',
+                    gap: '10px',
+                    alignItems: 'center',
+                  }}
                 >
                   <CallIcon />
                   <span>{t('contact-phone')}</span>
                 </div>
                 <a href="tel: +4915755749306">+49 15755749306</a>
+              </div>
+              <div className="contact-card__number">
+                <div
+                  style={{
+                    display: 'flex',
+                    gap: '10px',
+                    alignItems: 'center',
+                  }}
+                >
+                  <CallIcon />
+                  <span>{t('contact-phone')}</span>
+                </div>
+                <a href="tel: +998881844949">+998 881844949</a>
+              </div>
+              <div className="contact-card__number">
+                <div
+                  style={{ display: 'flex', gap: '10px', alignItems: 'center' }}
+                >
+                  <MessageEmail />
+                  <span>{t('contact-email')}</span>
+                </div>
+                <a href="mailto: s-delzer@gmx.de">s-delzer@gmx.de</a>
               </div>
             </div>
             <div>
