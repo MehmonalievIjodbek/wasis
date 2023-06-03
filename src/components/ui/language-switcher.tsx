@@ -16,8 +16,6 @@ export default function LanguageSwitcher() {
     : options[2]
   const [selectedItem, setSelectedItem] = useState(currentSelectedItem)
 
-  console.log('oop', options)
-
   function handleItemClick(values: any) {
     setSelectedItem(values)
     router.push(asPath, undefined, {

@@ -7,8 +7,6 @@ const HomePage = (props) => {
 
   const { banner } = props;
 
-  console.log("banner.src", banner.src);
-
   return (
     <div className="relative1">
       <div
