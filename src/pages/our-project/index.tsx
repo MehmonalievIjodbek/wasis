@@ -24,14 +24,14 @@ export default function index() {
       title: 'project-title1',
       // text: '1998 - 2002',
       desc: 'project-desc1',
-      imd: '/assets/images/1.jpg',
+      imd: '/assets/images/4.jpg',
     },
     {
       id: 2,
       title: 'project-title2',
       // text: '2002 - 2004',
       desc: 'project-desc2',
-      imd: '/assets/images/4.jpg',
+      imd: '/assets/images/5.jpg',
     },
     {
       id: 3,
@@ -52,14 +52,14 @@ export default function index() {
       title: 'project-title5',
       // text: '2010 - 2013',
       desc: 'project-desc5',
-      imd: '/assets/images/5.jpg',
+      imd: false,
     },
     {
       id: 6,
       title: 'project-title6',
       // text: '2013 - 2017',
       desc: 'project-desc6',
-      imd: '/assets/images/6.jpg',
+      imd: false,
     },
   ]
   const [visible, setVisible] = useState(false)
