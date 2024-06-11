@@ -5,7 +5,6 @@ import {useTranslation} from 'next-i18next'
 
 export default function index() {
     const {t} = useTranslation('common')
-    console.log(t)
 
 
     return (

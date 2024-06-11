@@ -24,7 +24,6 @@ export const files = [
 
 export default function index() {
     const {t} = useTranslation('common')
-    console.log(t)
 
     return (
         <div className="container">
@@ -41,15 +40,6 @@ export default function index() {
                 </div>
 
             </div>
-            {/*<div>*/}
-            {/*    <HomePage banner={banner} />*/}
-            {/*</div>*/}
-            {/*<div className="container">*/}
-            {/*    <HomeButton />*/}
-            {/*</div>*/}
-            {/*<div className="container">*/}
-            {/*    <ChemPage chemicals={chemicals} items={items} />*/}
-            {/*</div>*/}
         </div>
     )
 }

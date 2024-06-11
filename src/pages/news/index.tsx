@@ -8,8 +8,6 @@ import Link from "next/link";
 export default function index() {
     const {t} = useTranslation('common')
 
-    console.log("t", t)
-
     return (
         <div className="container">
             <div className="relative1">

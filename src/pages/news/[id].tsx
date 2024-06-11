@@ -66,7 +66,6 @@ export async function getStaticPaths({locales}: { locales: string[] }) {
 export async function getStaticProps({params, locale}: any) {
     const item = items.find((item) => item.id.toString() === params.id);
 
-    console.log('item', item)
     return {
         props: {
             item,

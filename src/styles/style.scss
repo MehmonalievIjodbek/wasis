@@ -112,7 +112,7 @@ h6 {
 }
 
 .footer {
-
+  border-top: 1px solid #555658;
   &-card {
     display: flex;
     justify-content: space-between;
@@ -124,10 +124,16 @@ h6 {
       font-weight: 500;
     }
 
+
     &__img {
-      width: 100%;
+      width: 120px;
       height: 100px;
     }
+    &__img1 {
+      width: 400px;
+      height: 100px;
+    }
+
   }
 }
 
