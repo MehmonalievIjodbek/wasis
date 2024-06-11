@@ -1,22 +1,24 @@
 import React from "react";
-import HomePage from "@components/home/HomePage";
-import HomeSelect from "@components/home/HomeSelect";
-import { useTranslation } from "next-i18next";
+import {useTranslation} from "next-i18next";
+import NewsCard from "@components/news/newsCard";
 
 const HomeIndex = () => {
-  const { t } = useTranslation("common");
+    const {t} = useTranslation("common");
 
-  const banner = {
-    src: "/assets/images/home.jpg",
-    text: "home-banner",
-  };
-
-  return (
-    <>
-      <HomePage banner={banner} />
-      <HomeSelect />
-    </>
-  );
+    return (
+        // <div className="relative1">
+        <div className="container">
+            <div className="relative1">
+                <div className="main-page">
+                    <h1>{t("main-page-h1")}</h1>
+                </div>
+                <div>
+                    <NewsCard/>
+                </div>
+            </div>
+        </div>
+        // </div>
+    );
 };
 
 export default HomeIndex;

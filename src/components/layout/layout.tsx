@@ -74,13 +74,12 @@
 import Navbar from '@components/layout/navbar/index'
 import Footer from '@components/layout/footer/footer'
 
-export default function Layout({ children }: any) {
-  return (
-    <>
-      <Navbar />
-      hi
-      <main>{children}</main>
-      <Footer />
-    </>
-  )
+export default function Layout({children}: any) {
+    return (
+        <>
+            <Navbar/>
+            <main>{children}</main>
+            <Footer/>
+        </>
+    )
 }

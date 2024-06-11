@@ -1,7 +1,7 @@
 {
-  "menu-project": "Наш проект",
-  "menu-industrial": "Промышленность",
-  "menu-liquefied": "Сжиженный природный газ (СПГ)",
-  "menu-mining": "Добыча ресурсов",
+  "menu-project": "О нас",
+  "menu-industrial": "Регламент и документы",
+  "menu-liquefied": "Объявления",
+  "menu-mining": "Новости",
   "menu-contacts": "Контакты"
 }

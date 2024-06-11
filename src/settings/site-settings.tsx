@@ -2,7 +2,7 @@ import EngIcon from '@components/icons/language-eng-icon'
 import RuIcon from '@components/icons/language-ru-icon'
 
 export const siteSettings = {
-  name: 'NSI Capital',
+  name: 'Wasis',
   description: 'description',
   author: {
     name: 'PSS, Company.',
@@ -10,7 +10,7 @@ export const siteSettings = {
     address: '',
   },
   logo: {
-    url: '/assets/images/iconLogo.jpg',
+    url: '/assets/images/log.jpg',
     alt: 'Infokredit',
     href: '/',
     width: 95,

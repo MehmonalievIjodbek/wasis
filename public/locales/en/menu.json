@@ -1,7 +1,7 @@
 {
-  "menu-project": "Our Project",
-  "menu-industrial": "Industrial",
-  "menu-liquefied": "Liquefied Natural Gas (LNG)",
-  "menu-mining": "Mining    ",
+  "menu-project": "About",
+  "menu-industrial": "Regulations and documents",
+  "menu-liquefied": "Announcements",
+  "menu-mining": "News",
   "menu-contacts": "Contact"
 }

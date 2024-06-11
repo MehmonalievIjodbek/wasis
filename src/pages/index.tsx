@@ -15,7 +15,8 @@ export default function Home() {
     <>
       <Container className="border-b-2 border[#E6E6E6]">
         {/* <h2>{t('menu-home')}</h2> */}
-        <HomeIndex />
+        <HomeIndex />\
+
       </Container>
     </>
   )
