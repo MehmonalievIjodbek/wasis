@@ -1,13 +1,10 @@
 import { useState, Fragment, useEffect } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
-import { HiOutlineChevronDown } from 'react-icons/hi'
 import { siteSettings } from '@settings/site-settings'
-import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 
 export default function LanguageSwitcher() {
   const { site_header } = siteSettings
-  const { t } = useTranslation('common')
   const options = site_header.languageMenu
   const router = useRouter()
   const { asPath, locale } = router
@@ -69,7 +66,6 @@ export default function LanguageSwitcher() {
               <span className="me-1.5 flex items-center">
                 {selectedItem?.icon}
               </span>
-              <HiOutlineChevronDown
                 className="w-5 h-5 text-gray-400"
                 aria-hidden="true"
               />

@@ -2,7 +2,7 @@ import EngIcon from '@components/icons/language-eng-icon'
 import RuIcon from '@components/icons/language-ru-icon'
 
 export const siteSettings = {
-  name: 'Wasis',
+  name: 'Energy Efficiency Financing Facility.',
   description: 'description',
   author: {
     name: 'PSS, Company.',
