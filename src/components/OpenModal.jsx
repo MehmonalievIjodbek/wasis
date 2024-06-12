@@ -1,6 +1,6 @@
 import {Button, Drawer, Space} from "antd";
 import {useState} from "react";
-import {MenuFoldOutlined, CloseOutlined} from "@ant-design/icons";
+import {MenuFoldOutlined, CloseOutlined, MenuOutlined} from "@ant-design/icons";
 import Link from "next/link";
 import RightIcon from "./icons/Right-icon";
 import {useTranslation} from "next-i18next";
@@ -51,7 +51,8 @@ const App = () => {
         <div className="open-modal">
             <Space>
                 <Button type="primary" onClick={showDrawer}>
-                    <MenuFoldOutlined/>
+                    {/*<MenuFoldOutlined/>*/}
+                    <MenuOutlined />
                 </Button>
             </Space>
             <Drawer

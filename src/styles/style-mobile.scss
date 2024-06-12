@@ -103,6 +103,13 @@
   }
   .footer-card {
     flex-direction: column;
+    span {
+      text-align: center !important;
+      line-height: 1.5 !important;
+      font-weight: bold;
+      max-width: 400px !important;
+      width: 100% !important;
+    }
   }
 
 

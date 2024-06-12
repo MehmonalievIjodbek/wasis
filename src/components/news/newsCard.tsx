@@ -11,7 +11,7 @@ const NewsCard = () => {
                 {items?.map((item) => (
                     <Link href={`/news/${item.id}`}>
                         <div className="news-card">
-                            <img src={item?.src} alt=""/>
+                            <img  src={item?.src} alt=""/>
                             <p>{t(item?.text, {ns: 'common'}).substring(0, 214)} ...</p>
                         </div>
                     </Link>
